@@ -1,6 +1,6 @@
 {
   "name": "@nijor/nparser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom html-parser for Nijor",
   "main": "index.js",
   "types": "index.d.ts",
