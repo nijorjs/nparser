@@ -1,6 +1,6 @@
 {
   "name": "@nijor/nparser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A custom html-parser for Nijor",
   "main": "index.js",
   "types": "index.d.ts",
@@ -11,7 +11,11 @@
   "license": "MIT",
   "files": [
     "index.d.ts",
-    "index.js"
+    "index.js",
+    "nparser.darwin-arm64.node",
+    "nparser.darwin-x64.node",
+    "nparser.linux-x64-gnu.node",
+    "nparser.win32-x64-msvc.node"
   ],
   "napi": {
     "binaryName": "nparser",
@@ -23,7 +27,8 @@
     ]
   },
   "scripts": {
-    "build": "napi build --platform --release"
+    "build": "napi build --platform --release",
+    "artifacts": "napi artifacts --output-dir artifacts --npm-dir ."
   },
   "devDependencies": {
     "@napi-rs/cli": "^3.0.0"
